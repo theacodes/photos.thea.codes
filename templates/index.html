@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Photography by Stargirl Flowers</h1>
+
+<div>
+{% for photo in photos if not photo.get('hidden') %}
+  <div class="photo">
+    <a href="{{storage_root}}{{photo.full_url}}" target="_blank">
+      <img src="{{storage_root}}{{photo.thumbnail_url}}" alt="...">
+    </a>
+    <p class="photo-metadata">{{photo.make}} {{photo.model}} &middot; &fnof;/{{photo.f}} {{photo.exposure}} {{photo.focal_length}} &middot; {{photo.datetime.strftime("%b %d, %Y")}}</p>
+    {% if photo.description %}
+    <p class="photo-description">{{photo.description}}</p>
+    {% endif %}
+    {% if photo.license %}
+    <p class="photo-license">&copy; {{photo.license}}</p>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>
+
+{% endblock %}

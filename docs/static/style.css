@@ -1,0 +1,144 @@
+/*
+ * Globals
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #e25e6a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #41b990;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 80ch;
+  font-size: 130%;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  color: #333;
+  text-align: left;
+}
+
+/* Post page */
+
+h1 {
+  color: #265483;
+}
+
+h1 .rss {
+  font-size: 50%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #265483;
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-size: 160%;
+}
+
+.photo {
+  margin: 2em 0;
+}
+
+.photo img {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.photo p {
+  text-align: right;
+}
+
+.photo p.photo-description {
+  font-style: italic;
+}
+
+.photo p.photo-metadata {
+  font-weight: lighter;
+  color: #999;
+  font-size: 80%;
+}
+
+footer {
+  margin-top: 2.2em;
+  padding-top: 2em;
+  margin-bottom: 2em;
+  border-top: 1px solid #433e56;
+}
+
+.img-me-container {
+  padding-right: 0px;
+  margin-top: -10px;
+}
+
+.disclaimer {
+  text-align: right;
+  font-size: 75%;
+  color: #999;
+}
+
+.info {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 75%;
+}
+
+.info a,
+.info a:focus {
+  color: #41b990;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.info a:hover {
+  color: #63c8f6;
+}
+
+.name {
+  color: #c35b7d;
+}
+
+.location {
+  font-size: 90%;
+  color: #666;
+}
+
+@media(max-width: 768px) {
+  .disclaimer, .info {
+    text-align: center;
+  }
+
+  .disclaimer {
+    margin-top: 1em;
+  }
+}
+
+.image-caption {
+  display: block;
+  text-align: center;
+  margin-top: -2em;
+  margin-bottom: 3em;
+}
